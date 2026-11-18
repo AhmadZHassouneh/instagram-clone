@@ -1,9 +1,13 @@
 import { redirect } from "next/navigation";
-import { currentUser } from "@/lib/server/auth";
+import { IS_DEMO_EXPORT } from "@/lib/demo-build";
 
 // Login and sign-up pages: send logged-in users straight to their feed.
+// (The static demo has no cookies; its login form just signs you in as the demo user.)
 export default async function AuthLayout({ children }: LayoutProps<"/">) {
-  if (await currentUser()) redirect("/");
+  if (!IS_DEMO_EXPORT) {
+    const { currentUser } = await import("@/lib/server/auth");
+    if (await currentUser()) redirect("/");
+  }
   return (
     <div className="flex min-h-screen flex-col">
       <div className="flex flex-1 items-center justify-center px-4 py-8">{children}</div>

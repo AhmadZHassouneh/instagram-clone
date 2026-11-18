@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { api } from "@/lib/client";
+import { api, BASE_PATH } from "@/lib/client";
 import { AuthInput, Divider } from "@/components/auth-form";
 import { Logo } from "@/components/nav";
 
@@ -18,7 +18,7 @@ export default function LoginPage() {
     setError(null);
     try {
       await api("/api/auth/login", { body: { login, password } });
-      window.location.replace("/");
+      window.location.replace(`${BASE_PATH}/`);
     } catch (err) {
       setError((err as Error).message);
       setBusy(false);

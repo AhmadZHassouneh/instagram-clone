@@ -22,7 +22,7 @@ import {
   LogOut,
   Scale,
 } from "lucide-react";
-import { api } from "@/lib/client";
+import { api, BASE_PATH } from "@/lib/client";
 import { useApp } from "./app-context";
 import { SidePanel } from "./panels";
 import { Avatar } from "./ui";
@@ -89,7 +89,7 @@ function MoreMenu({ onClose }: { onClose: () => void }) {
       <div className="my-2 h-1.5 bg-separator" />
       {item(<LogOut size={18} />, "Log out", async () => {
         await api("/api/auth/logout", { method: "POST" });
-        window.location.replace("/accounts/login");
+        window.location.replace(`${BASE_PATH}/accounts/login`);
       })}
     </div>
   );

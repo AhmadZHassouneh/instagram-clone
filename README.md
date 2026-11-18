@@ -115,3 +115,12 @@ Open **More → Reconciliation** (`/reconcile`), drop in a statement PDF, and re
 - **Privacy:** the uploaded PDF isn't saved. Only parsed rows are stored, with the account number masked. Parse errors are never logged.
 - **Accuracy on synthetic data** (30 random seeds, 901 payments plus decoys): 96.3% of payments linked to exactly the right orders, 0 wrong auto-matches, 0 decoys linked. The misses are left *unmatched* for manual review. They're payment shapes beyond the search (for example a deposit, then one transfer paying three invoices).
 - **Tests:** `tests/reconcile/` covers name matching, every match shape, the date window, ambiguity, rejected pairs, and a full seed → statement → parse → match run that checks against the known answers and that protected tables are unchanged.
+
+## Online demo (GitHub Pages)
+
+A read-only copy of the app runs at **https://ahmadzhassouneh.github.io/instagram-clone/**, signed in as `dabos_print`.
+
+- GitHub Pages only serves files, so the demo is a static build (`DEMO_EXPORT=1`) that answers the app's API calls in the browser from a snapshot in `demo/` (`src/lib/demo.ts`).
+- Sent messages, likes, saves and follows are kept in the visitor's own browser (localStorage); uploads, profile edits and new chats aren't available.
+- `.github/workflows/pages.yml` builds and publishes it on every push to `main`.
+- To refresh the snapshot: `npm run dev`, then `npm run demo:snapshot`, then commit `demo/`.

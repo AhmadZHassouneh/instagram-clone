@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { api } from "@/lib/client";
+import { api, BASE_PATH } from "@/lib/client";
 import { AuthInput, Divider } from "@/components/auth-form";
 import { Logo } from "@/components/nav";
 
@@ -24,7 +24,7 @@ export default function SignupPage() {
     setError(null);
     try {
       await api("/api/auth/signup", { body: form });
-      window.location.replace("/");
+      window.location.replace(`${BASE_PATH}/`);
     } catch (err) {
       setError((err as Error).message);
       setBusy(false);

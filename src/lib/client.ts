@@ -2,6 +2,9 @@
 
 import { useCallback, useEffect, useState, useSyncExternalStore } from "react";
 
+/** URL prefix when the site is served from a sub-path (GitHub Pages: "/instagram-clone"). */
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const PHONE_QUERY = "(max-width: 767px)";
 /** True on phone-sized screens (below Tailwind's md breakpoint); false during server render. */
 export function useIsPhone() {
@@ -31,6 +34,15 @@ export async function api<T = { ok: true }>(
   opts: { method?: string; body?: unknown } = {},
 ): Promise<T> {
   const isForm = opts.body instanceof FormData;
+  if (process.env.NEXT_PUBLIC_DEMO === "1") {
+    // Static GitHub Pages build: no server, answered in the browser from the snapshot.
+    const { demoApi, DemoError } = await import("./demo");
+    try {
+      return (await demoApi(path, opts.method ?? (opts.body !== undefined ? "POST" : "GET"), opts.body)) as T;
+    } catch (e) {
+      throw e instanceof DemoError ? new ApiError(e.status, e.message) : e;
+    }
+  }
   const res = await fetch(path, {
     method: opts.method ?? (opts.body !== undefined ? "POST" : "GET"),
     headers: opts.body !== undefined && !isForm ? { "Content-Type": "application/json" } : undefined,
@@ -39,7 +51,7 @@ export async function api<T = { ok: true }>(
   const data = await res.json().catch(() => ({}));
   if (!res.ok) {
     if (res.status === 401 && typeof window !== "undefined" && !location.pathname.startsWith("/accounts")) {
-      window.location.replace("/accounts/login");
+      window.location.replace(`${BASE_PATH}/accounts/login`);
     }
     throw new ApiError(res.status, (data as { error?: string }).error ?? "Something went wrong.");
   }

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { CircleCheck } from "lucide-react";
-import { api, useApi, useOnCreated } from "@/lib/client";
+import { api, BASE_PATH, useApi, useOnCreated } from "@/lib/client";
 import type { FollowUser, Post } from "@/lib/types";
 import { useApp } from "@/components/app-context";
 import { MobileHomeHeader } from "@/components/nav";
@@ -63,7 +63,7 @@ function RightColumn() {
           className="text-xs font-semibold text-link hover:text-link-text"
           onClick={async () => {
             await api("/api/auth/logout", { method: "POST" });
-            window.location.replace("/accounts/login");
+            window.location.replace(`${BASE_PATH}/accounts/login`);
           }}
         >
           Switch

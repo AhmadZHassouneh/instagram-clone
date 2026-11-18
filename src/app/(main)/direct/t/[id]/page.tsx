@@ -1,9 +1,12 @@
-"use client";
+import { demoParams } from "@/lib/demo-build";
+import ClientPage from "./page-client";
 
-import { useParams } from "next/navigation";
-import { Inbox } from "@/components/direct";
+// Pre-rendered pages for the static demo build; rendered on demand otherwise.
+export function generateStaticParams() {
+  return demoParams("conversations");
+}
 
-export default function ThreadPage() {
-  const { id } = useParams<{ id: string }>();
-  return <Inbox selectedId={Number(id)} />;
+// A server component (not a bare re-export), so Next reads generateStaticParams from this file.
+export default function Page() {
+  return <ClientPage />;
 }
