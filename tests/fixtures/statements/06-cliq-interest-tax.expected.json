@@ -1,0 +1,28 @@
+{
+  "description": "CliQ inward rows, monthly interest and tax deductions",
+  "seed": 2026,
+  "rowCount": 31,
+  "pageCount": 3,
+  "openingFils": 100000,
+  "closingFils": 1899108,
+  "totalAddedFils": 2624185,
+  "totalDeductedFils": 825077,
+  "byType": {
+    "cliq_inward": 18,
+    "transfer": 7,
+    "interest": 3,
+    "tax": 3
+  },
+  "ok": true,
+  "closingOk": true,
+  "mismatchIndexes": [],
+  "counterparties": [
+    "TALA TALA KAREEM JABER",
+    "TAMER YAZAN DIMA KHATIB",
+    "MAYAR MAYAR SHAHD KHATIB",
+    "WALEED YAZAN JANA REEM DAJANI",
+    "SALMA DIMA AZZAM",
+    "KAREEM HAMZA OMAR DAJANI",
+    "YAZAN YAZAN LEEN NIMRI"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "description": "all rows fine but the printed closing balance is 0.005 off",
+  "seed": 2026,
+  "rowCount": 10,
+  "pageCount": 1,
+  "openingFils": 8000,
+  "closingFils": 1109706,
+  "totalAddedFils": 1913951,
+  "totalDeductedFils": 812250,
+  "byType": {
+    "transfer": 8,
+    "cliq_inward": 2
+  },
+  "ok": false,
+  "closingOk": false,
+  "mismatchIndexes": [],
+  "counterparties": [
+    "TAMER MAYAR REEM TARAWNEH",
+    "RAWAN BASHAR NASSAR",
+    "LAYAN HUDA JANA QUSAI QUDAH",
+    "HAMZA REEM SALEH",
+    "BASHAR LAYAN ODAI SALEH",
+    "WALEED SALMA QUSAI SALMA AZZAM",
+    "SALMA HALA YAZAN DIMA AZZAM",
+    "TALA REEM MAYAR FAKHOURI"
+  ]
+}

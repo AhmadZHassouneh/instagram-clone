@@ -1,0 +1,36 @@
+{
+  "description": "row 9's balance is 1.000 too high, carried to the end (must be reported)",
+  "seed": 2026,
+  "rowCount": 20,
+  "pageCount": 2,
+  "openingFils": 20000,
+  "closingFils": 1869088,
+  "totalAddedFils": 3057588,
+  "totalDeductedFils": 1209500,
+  "byType": {
+    "cliq_inward": 5,
+    "transfer": 15
+  },
+  "ok": false,
+  "closingOk": false,
+  "mismatchIndexes": [
+    9
+  ],
+  "counterparties": [
+    "SALMA KAREEM YAZAN QUSAI AZZAM",
+    "SHAHD BASHAR QUDAH",
+    "SHAHD HUDA MAJALI",
+    "HUDA HUDA FARES FAKHOURI",
+    "HAMZA MAYAR KHATIB",
+    "MAYAR YAZAN HUDA TARAWNEH",
+    "TAMER LEEN YAZAN ODAI KHALIL",
+    "LAYAN HALA REEM SHAWABKEH",
+    "WALEED SUHAIB SMADI",
+    "NOOR JANA RAMI ODAI NASSAR",
+    "LAYAN MAYAR LAYAN BATAINEH",
+    "HALA HALA NASSAR",
+    "MAYAR LEEN LEEN HUDA ZOUBI",
+    "ZAID FARES RAWASHDEH",
+    "DIMA ZAID NASSAR"
+  ]
+}

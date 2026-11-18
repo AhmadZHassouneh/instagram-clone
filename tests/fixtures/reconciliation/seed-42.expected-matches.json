@@ -1,0 +1,339 @@
+{
+  "seed": 42,
+  "rows": [
+    {
+      "index": 1,
+      "date": "2026-05-02",
+      "amountFils": 108500,
+      "direction": "in",
+      "kind": "noise",
+      "invoiceNumbers": []
+    },
+    {
+      "index": 2,
+      "date": "2026-05-09",
+      "amountFils": 40990,
+      "direction": "out",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "RCPT-2026-0005"
+      ]
+    },
+    {
+      "index": 3,
+      "date": "2026-05-20",
+      "amountFils": 425000,
+      "direction": "in",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "INV-2026-0003"
+      ]
+    },
+    {
+      "index": 4,
+      "date": "2026-05-21",
+      "amountFils": 125000,
+      "direction": "in",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "INV-2026-0005"
+      ]
+    },
+    {
+      "index": 5,
+      "date": "2026-05-23",
+      "amountFils": 1190000,
+      "direction": "in",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "INV-2026-0009"
+      ]
+    },
+    {
+      "index": 6,
+      "date": "2026-05-24",
+      "amountFils": 1225000,
+      "direction": "in",
+      "kind": "near_miss",
+      "invoiceNumbers": []
+    },
+    {
+      "index": 7,
+      "date": "2026-05-25",
+      "amountFils": 530000,
+      "direction": "in",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "INV-2026-0001"
+      ]
+    },
+    {
+      "index": 8,
+      "date": "2026-05-26",
+      "amountFils": 13500,
+      "direction": "in",
+      "kind": "noise",
+      "invoiceNumbers": []
+    },
+    {
+      "index": 9,
+      "date": "2026-05-30",
+      "amountFils": 530500,
+      "direction": "in",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "INV-2026-0001"
+      ]
+    },
+    {
+      "index": 10,
+      "date": "2026-05-31",
+      "amountFils": 2631,
+      "direction": "in",
+      "kind": "noise",
+      "invoiceNumbers": []
+    },
+    {
+      "index": 11,
+      "date": "2026-05-31",
+      "amountFils": 263,
+      "direction": "out",
+      "kind": "noise",
+      "invoiceNumbers": []
+    },
+    {
+      "index": 12,
+      "date": "2026-06-01",
+      "amountFils": 425500,
+      "direction": "in",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "INV-2026-0003"
+      ]
+    },
+    {
+      "index": 13,
+      "date": "2026-06-03",
+      "amountFils": 115000,
+      "direction": "in",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "INV-2026-0007"
+      ]
+    },
+    {
+      "index": 14,
+      "date": "2026-06-04",
+      "amountFils": 76500,
+      "direction": "in",
+      "kind": "noise",
+      "invoiceNumbers": []
+    },
+    {
+      "index": 15,
+      "date": "2026-06-05",
+      "amountFils": 312000,
+      "direction": "out",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "RCPT-2026-0001"
+      ]
+    },
+    {
+      "index": 16,
+      "date": "2026-06-08",
+      "amountFils": 34990,
+      "direction": "out",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "RCPT-2026-0003"
+      ]
+    },
+    {
+      "index": 17,
+      "date": "2026-06-15",
+      "amountFils": 1190000,
+      "direction": "in",
+      "kind": "near_miss",
+      "invoiceNumbers": []
+    },
+    {
+      "index": 18,
+      "date": "2026-06-24",
+      "amountFils": 110000,
+      "direction": "out",
+      "kind": "noise",
+      "invoiceNumbers": []
+    },
+    {
+      "index": 19,
+      "date": "2026-06-30",
+      "amountFils": 2275,
+      "direction": "in",
+      "kind": "noise",
+      "invoiceNumbers": []
+    },
+    {
+      "index": 20,
+      "date": "2026-06-30",
+      "amountFils": 228,
+      "direction": "out",
+      "kind": "noise",
+      "invoiceNumbers": []
+    },
+    {
+      "index": 21,
+      "date": "2026-07-17",
+      "amountFils": 177990,
+      "direction": "out",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "RCPT-2026-0006"
+      ]
+    },
+    {
+      "index": 22,
+      "date": "2026-07-23",
+      "amountFils": 442500,
+      "direction": "out",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "RCPT-2026-0002"
+      ]
+    },
+    {
+      "index": 23,
+      "date": "2026-07-31",
+      "amountFils": 1000500,
+      "direction": "in",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "INV-2026-0002"
+      ]
+    },
+    {
+      "index": 24,
+      "date": "2026-07-31",
+      "amountFils": 1860,
+      "direction": "in",
+      "kind": "noise",
+      "invoiceNumbers": []
+    },
+    {
+      "index": 25,
+      "date": "2026-07-31",
+      "amountFils": 186,
+      "direction": "out",
+      "kind": "noise",
+      "invoiceNumbers": []
+    },
+    {
+      "index": 26,
+      "date": "2026-08-02",
+      "amountFils": 1190500,
+      "direction": "in",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "INV-2026-0010"
+      ]
+    },
+    {
+      "index": 27,
+      "date": "2026-08-05",
+      "amountFils": 36000,
+      "direction": "out",
+      "kind": "noise",
+      "invoiceNumbers": []
+    },
+    {
+      "index": 28,
+      "date": "2026-08-05",
+      "amountFils": 6000,
+      "direction": "out",
+      "kind": "noise",
+      "invoiceNumbers": []
+    },
+    {
+      "index": 29,
+      "date": "2026-08-08",
+      "amountFils": 42000,
+      "direction": "out",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "RCPT-2026-0004"
+      ]
+    },
+    {
+      "index": 30,
+      "date": "2026-08-09",
+      "amountFils": 611000,
+      "direction": "in",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "INV-2026-0004"
+      ]
+    },
+    {
+      "index": 31,
+      "date": "2026-08-18",
+      "amountFils": 2635000,
+      "direction": "in",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "INV-2026-0006"
+      ]
+    },
+    {
+      "index": 32,
+      "date": "2026-08-19",
+      "amountFils": 2658000,
+      "direction": "in",
+      "kind": "near_miss",
+      "invoiceNumbers": []
+    },
+    {
+      "index": 33,
+      "date": "2026-08-22",
+      "amountFils": 610500,
+      "direction": "in",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "INV-2026-0004"
+      ]
+    },
+    {
+      "index": 34,
+      "date": "2026-08-31",
+      "amountFils": 1504,
+      "direction": "in",
+      "kind": "noise",
+      "invoiceNumbers": []
+    },
+    {
+      "index": 35,
+      "date": "2026-08-31",
+      "amountFils": 150,
+      "direction": "out",
+      "kind": "noise",
+      "invoiceNumbers": []
+    },
+    {
+      "index": 36,
+      "date": "2026-09-09",
+      "amountFils": 820500,
+      "direction": "in",
+      "kind": "payment",
+      "invoiceNumbers": [
+        "INV-2026-0008"
+      ]
+    },
+    {
+      "index": 37,
+      "date": "2026-09-10",
+      "amountFils": 2635000,
+      "direction": "in",
+      "kind": "near_miss",
+      "invoiceNumbers": []
+    }
+  ]
+}

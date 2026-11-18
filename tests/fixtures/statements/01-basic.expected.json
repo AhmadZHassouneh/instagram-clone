@@ -1,0 +1,39 @@
+{
+  "description": "25 mixed rows on one or two pages",
+  "seed": 2026,
+  "rowCount": 25,
+  "pageCount": 3,
+  "openingFils": 12500,
+  "closingFils": 2246497,
+  "totalAddedFils": 3684920,
+  "totalDeductedFils": 1450923,
+  "byType": {
+    "transfer": 20,
+    "cliq_inward": 5
+  },
+  "ok": true,
+  "closingOk": true,
+  "mismatchIndexes": [],
+  "counterparties": [
+    "JANA ODAI MOMANI",
+    "SAMIR ODAI SHAWABKEH",
+    "MUTAZ RAMI OMAR NOOR FAKHOURI",
+    "HAMZA NOOR AZZAM",
+    "SALMA RAWAN DIMA HALA FAKHOURI",
+    "LAYAN KHALED SMADI",
+    "NOOR WALEED TAMER NASSAR",
+    "MUTAZ RAMI REEM KHATIB",
+    "BASHAR RAWAN RAMI ZAID DAJANI",
+    "SAMIR TALA YAZAN NIMRI",
+    "BASHAR OMAR HADDAD",
+    "HUDA LAYAN LAYAN KAREEM NIMRI",
+    "SHAHD YAZAN DIMA BATAINEH",
+    "ANAS FARES YAZAN OBEIDAT",
+    "RAWAN RAWAN MOMANI",
+    "HUDA OMAR KHATIB",
+    "TALA SHAHD BATAINEH",
+    "HALA ANAS LAYAN SMADI",
+    "ANAS TAMER RAMI SMADI",
+    "MAYAR TAMER WALEED NIMRI"
+  ]
+}

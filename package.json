@@ -1,0 +1,39 @@
+{
+  "name": "snapgram",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "seed": "node scripts/seed.mjs",
+    "test": "vitest run",
+    "statement:parse": "tsx scripts/statement-parse.mts",
+    "fixtures:statements": "tsx scripts/fixtures-statements.mts",
+    "seed:business": "tsx scripts/seed-business.mts",
+    "seed:business:clean": "tsx scripts/seed-business-clean.mts",
+    "import:test-chats": "node scripts/import-test-conversations.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^1.49.0",
+    "next": "16.3.8",
+    "pdfjs-dist": "^6.3.289",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^24.19.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.8",
+    "pdf-lib": "^1.17.1",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^5.0.3"
+  }
+}

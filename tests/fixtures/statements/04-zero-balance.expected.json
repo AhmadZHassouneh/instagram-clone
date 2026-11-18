@@ -1,0 +1,22 @@
+{
+  "description": "balance starts at, returns to and ends at 0.000",
+  "seed": 2026,
+  "rowCount": 4,
+  "pageCount": 1,
+  "openingFils": 0,
+  "closingFils": 0,
+  "totalAddedFils": 85255,
+  "totalDeductedFils": 85255,
+  "byType": {
+    "transfer": 3,
+    "cliq_inward": 1
+  },
+  "ok": true,
+  "closingOk": true,
+  "mismatchIndexes": [],
+  "counterparties": [
+    "WALEED QUSAI SHAWABKEH",
+    "LEEN HALA SMADI",
+    "WALEED QUSAI SHAWABKEH"
+  ]
+}
